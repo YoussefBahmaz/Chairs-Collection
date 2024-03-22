@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Chairs store</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100%;
+      }
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10%;
+        margin: 0px 20px;
+      }
+      header h2 {
+        font-family: "Cairo", sans-serif;
+        font-weight: 600;
+        font-size: 25px;
+      }
+      header i {
+        font-family: "Cairo", sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        position: relative;
+      }
+      
+      section {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 100%;
+        margin: 50px auto 0 auto;
+        flex-wrap: wrap;
+        
+      }
+      section img {
+        width: 100px;
+        margin-bottom: 10px;
+      }
+      .chair4 {
+        height: 150px;
+      }
+      .chair2,.chair5, .chair6, .chair7{
+        width: 150px;
+      }
+      .chair3, .chair6{
+        margin-top: 40px;
+      }
+      section .card{
+        background-color: #c7eaa6;
+        height: 47%;
+        width: 170px;
+        display: flex;
+        box-shadow: -3px 0 7px #0000004b;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        font-family: "Cairo", sans-serif;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: all 1s ease;
+        position: relative;
+      }
+      section .dscp{
+        position: absolute;
+        text-align: center;
+        font-size: 11px;
+        font-family: system-ui;
+        color: white;
+        width: 100%;
+        background-color: #afafaf;
+        height: 100%;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        line-height: 20px;
+        opacity: 0;
+        transition: all 1s ease;
+      }
+      section .card:hover{
+        translate: -70px 0;
+        margin: 0 80px;
+      }
+      section .card:hover .dscp{
+        translate: 150px 0;
+        opacity: 1;
+        box-shadow: -5px 0 9px #000000b6;
+        
+      }
+      .dscp p{
+        width: 170px;
+      }
+      section .card button {
+        background-color: orange;
+        border: none;
+        padding: 8px 15px;
+        border-radius: 12px;
+        font-weight: 600;
+        font-family: system-ui;
+        text-transform: capitalize;
+        cursor: pointer;
+        transition: 1s;
+      }
+      section .card button:hover{
+        scale: 0.9;
+      }
+      @media screen and (min-width : 320px) and (max-width : 480px) {
+        section{
+          margin: 50px auto 0 auto;
+          width: 85%;
+        }
+      }
+      @media screen and (min-width : 481px) and (max-width : 768px) {
+        section{
+          margin: 50px auto 0 auto;
+          width: 85%;
+        }
+      }
+      @media screen and (min-width : 769px) and (max-width : 1024px) {
+        section{
+          margin: 50px auto 0 auto;
+          width: 88%;
+        }
+      }
+      @media screen and (min-width : 1025px) {
+        section{
+          margin: 50px auto 0 auto;
+          width: 82%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h2>Chairs Collection</h2>
+      <i class="fa-solid fa-cart-shopping"></i>
+    </header>
+    <section>
+      <div class="card">
+        <img src="chair(1).png" class="chair1" />
+        <h3>chair(1)</h3>
+        <p>700 $</p>
+        <div class="dscp">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tenetur
+            eligendi provident corporis optio, reiciendis excepturi alias cumque Ullam.
+          </p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chair(2).png" class="chair2" />
+        <h3>chair(2)</h3>
+        <p>180 $</p>
+        <div class="dscp">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tenetur
+            eligendi provident corporis optio, reiciendis excepturi alias cumque Ullam.
+          </p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chair(3).png" class="chair3" />
+        <h3>chair(3)</h3>
+        <p>250 $</p>
+        <div class="dscp">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tenetur
+            eligendi provident corporis optio, reiciendis excepturi alias cumque Ullam.
+          </p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chair(4).png" class="chair4" />
+        <h3>chair(4)</h3>
+        <p>700 $</p>
+        <div class="dscp">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tenetur
+            eligendi provident corporis optio, reiciendis excepturi alias cumque Ullam.
+          </p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chair(5).png" class="chair5" />
+        <h3>chair(5)</h3>
+        <p>120 $</p>
+        <div class="dscp">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tenetur
+            eligendi provident corporis optio, reiciendis excepturi alias cumque Ullam.
+          </p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chair(6).png" class="chair6" />
+        <h3>chair(6)</h3>
+        <p>150 $</p>
+        <div class="dscp">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tenetur
+            eligendi provident corporis optio, reiciendis excepturi alias cumque Ullam.
+          </p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chair(7).png" class="chair7" />
+        <h3>chair(7)</h3>
+        <p>200 $</p>
+        <div class="dscp">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tenetur
+            eligendi provident corporis optio, reiciendis excepturi alias cumque Ullam.
+          </p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="chair(8).png" class="chair8" />
+        <h3>chair(8)</h3>
+        <p>200 $</p>
+        <div class="dscp">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus tenetur
+            eligendi provident corporis optio, reiciendis excepturi alias cumque Ullam.
+          </p>
+          <button>Add to cart</button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
